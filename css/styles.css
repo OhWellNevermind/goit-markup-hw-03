@@ -1,0 +1,241 @@
+body
+{
+    font-family: Roboto;
+    color: #2E2F42;
+}
+
+.logo
+{
+    font-family: Raleway;
+    font-weight: 800;
+    text-decoration: none;
+    color: #2E2F42;
+    letter-spacing: 0.03em;
+}
+
+.logo-part
+{
+    color: #4D5AE5;
+}
+
+/* Navigation */
+.navigation-list-item
+{
+    display: inline;
+    list-style: none;
+}
+
+.navigation-list-link
+{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    color: #2E2F42;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Contacts */
+.contacts-list-item
+{
+    display: inline;
+    list-style: none;
+}
+
+.contacts-list-link
+{
+    color: #434455;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Main */
+/* Section Order */
+.order
+{
+    background-color: #2E2F42;
+}
+
+.order-header
+{
+    width: 496px;
+    height: 120px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    color: #FFFFFF;
+}
+
+.order-button
+{
+    background-color: #4D5AE5;
+    color: #fff;
+    width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.order-button:hover, .order-button:focus-visible
+{
+    background-color: #404BBF;
+}
+
+/* Why us */
+.why-us-list-item
+{
+    list-style: none;
+    display: inline-block;
+}
+
+.why-us-list-title
+{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.why-us-list-description
+{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* What are we doing */
+.works-heading
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+}
+
+.works-list-item
+{
+    display: inline-block;
+}
+
+/* Our Team */
+.team-heading
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.team-list-item
+{
+    list-style: none;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.team-list-item-name
+{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.team-list-item-desc
+{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Footer */
+
+footer
+{
+    background: #2E2F42;
+}
+
+.footer-logo
+{
+    font-family: Raleway;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #4D5AE5;
+}
+
+.footer-logo-part
+{
+    color: #F4F4FD;
+}
+
+.footer-text
+{
+    width: 264px;
+    height: 72px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E7E9FC;
+    letter-spacing: 0.02em;
+}
+
+/* portfolio.html */
+/* Filter buttons */
+.filter-button-list
+{
+    list-style: none;
+}
+
+.filter-button-item
+{
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+    border: none;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.filter-button-list .filter-button-item:hover, .filter-button-list .filter-button-item:focus-visible
+{
+    cursor: pointer;
+    background-color: #4D5AE5;
+    color: #fff;
+}
+
+.project-list
+{
+    list-style: none;
+}
+
+.project-list-name
+{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.project-list-description
+{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
