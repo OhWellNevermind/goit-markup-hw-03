@@ -209,13 +209,12 @@ ul
 }
 
 /* What are we doing */
-
 .works-list
 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .works-list-item:not(:nth-child(3n))
@@ -333,8 +332,8 @@ ul
 {
     display: flex;
     justify-content: center;
-    margin-top: 168px;
-    margin-bottom: 72px;
+    padding-top: 168px;
+    padding-bottom: 72px;
 }
 
 .filter-button
@@ -374,8 +373,15 @@ ul
 
 .project-list-item
 {
-    border: 1px solid #E7E9FC;
     margin-bottom: 48px;
+}
+
+.bottom-border
+{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .project-list-item:not(:nth-child(3n))
@@ -385,7 +391,7 @@ ul
 
 .project-list-photo
 {
-    margin-bottom: 32px;
+    display: block;
 }
 
 .project-list-name
@@ -404,5 +410,4 @@ ul
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
 }
