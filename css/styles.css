@@ -84,6 +84,11 @@ ul
     letter-spacing: 0.02em;
 }
 
+.navigation-list-link:hover, .navigation-list-link:focus-visible
+{
+    color: #404BBF;
+}
+
 /* Contacts */
 .contacts-list
 {
@@ -103,6 +108,11 @@ ul
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.contacts-list-link:hover, .contacts-list-link.order-button:focus-visible
+{
+    color: #404BBF;
 }
 /* Main */
 /* Section Order */
