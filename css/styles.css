@@ -4,6 +4,48 @@ body
     color: #2E2F42;
 }
 
+h1,h2,h3
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header
+{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.page-header-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav
+{
+    display: flex;
+    align-items: center;
+}
+
 .logo
 {
     font-family: Raleway;
@@ -11,6 +53,7 @@ body
     text-decoration: none;
     color: #2E2F42;
     letter-spacing: 0.03em;
+    margin-right: 76px;
 }
 
 .logo-part
@@ -19,10 +62,15 @@ body
 }
 
 /* Navigation */
-.navigation-list-item
+.navigation-list
 {
-    display: inline;
-    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list-item:not(:last-child)
+{
+    padding-right: 40px;
 }
 
 .navigation-list-link
@@ -37,10 +85,14 @@ body
 }
 
 /* Contacts */
-.contacts-list-item
+.contacts-list
 {
-    display: inline;
-    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list-item:not(:last-child) {
+    padding-right: 40px;
 }
 
 .contacts-list-link
@@ -52,18 +104,30 @@ body
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
 /* Main */
 /* Section Order */
+.page-order-container
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1440px;
+    height: 600px;
+}
+
 .order
 {
     background-color: #2E2F42;
+    height: 600px;
 }
 
 .order-header
 {
-    width: 496px;
-    height: 120px;
+    text-align: center;
+    margin-bottom: 48px;
+    width: 490px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 56px;
@@ -73,10 +137,12 @@ body
 
 .order-button
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #4D5AE5;
     color: #fff;
-    width: 169px;
-    height: 56px;
+    padding: 16px 32px 16px 32px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -94,10 +160,27 @@ body
 }
 
 /* Why us */
+.page-why-us-container
+{
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.why-us-list-item:not(:last-child)
+{
+    padding-right: 24px;
+}
+
+.why-us-list
+{
+    display: flex;
+    align-items: baseline;
+}
+
 .why-us-list-item
 {
-    list-style: none;
-    display: inline-block;
+    width: 288px;
 }
 
 .why-us-list-title
@@ -110,14 +193,31 @@ body
 
 .why-us-list-description
 {
+    margin-top: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 /* What are we doing */
+
+.works-list
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.works-list-item:not(:nth-child(3n))
+{
+    padding-right: 24px;
+}
+
 .works-heading
 {
+    margin-bottom: 72px;
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -125,29 +225,47 @@ body
     letter-spacing: 0.02em;
 }
 
-.works-list-item
+/* Our Team */
+.team
 {
-    display: inline-block;
+    background-color: #F4F4FD;
 }
 
-/* Our Team */
 .team-heading
 {
+    text-align: center;
+    margin-bottom: 72px;
+    padding-top: 120px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
 }
 
+.team-list-item:not(:nth-child(4n)) {
+    margin-right: 24px;
+}
+
+.team-list
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .team-list-item
 {
-    list-style: none;
-    display: inline-block;
     background-color: #fff;
+    margin-bottom: 120px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item-name
 {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    text-align: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -156,16 +274,24 @@ body
 
 .team-list-item-desc
 {
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 /* Footer */
-
-footer
+.footer
 {
     background: #2E2F42;
+}
+
+.page-footer-container
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo
@@ -185,7 +311,6 @@ footer
 .footer-text
 {
     width: 264px;
-    height: 72px;
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
@@ -197,10 +322,13 @@ footer
 /* Filter buttons */
 .filter-button-list
 {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 168px;
+    margin-bottom: 72px;
 }
 
-.filter-button-item
+.filter-button
 {
     color: #4D5AE5;
     background-color: #F4F4FD;
@@ -210,32 +338,62 @@ footer
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    text-align: center;
+    padding: 12px 24px;
     letter-spacing: 0.04em;
 }
 
-.filter-button-list .filter-button-item:hover, .filter-button-list .filter-button-item:focus-visible
+.filter-button-item:not(:last-child)
+{
+    margin-right: 24px;
+}
+
+.filter-button-list .filter-button:hover, .filter-button-list .filter-button:focus-visible
 {
     cursor: pointer;
     background-color: #4D5AE5;
     color: #fff;
 }
 
+/* PROJECTS */
 .project-list
 {
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-list-item
+{
+    border: 1px solid #E7E9FC;
+    margin-bottom: 48px;
+}
+
+.project-list-item:not(:nth-child(3n))
+{
+    margin-right: 20px;
+}
+
+.project-list-photo
+{
+    margin-bottom: 32px;
 }
 
 .project-list-name
 {
+    padding-left: 16px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .project-list-description
 {
+    padding-left: 16px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
